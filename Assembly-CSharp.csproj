@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\RuinStoneEffects.cs" />
+    <Compile Include="Assets\enemy.cs" />
     <Compile Include="Assets\PlayerScript.cs" />
     <Compile Include="Assets\2D_Handpainted_Magical_Rocks_and_Stones\Scripts\AddColorEffect.cs" />
   </ItemGroup>
@@ -1179,9 +1180,17 @@
       <Project>{9A4186E7-044B-A66A-147F-5D26532DF4A4}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshPlusEditor.csproj">
+      <Project>{A604FDEF-4C9D-2CF4-C6C1-EEAAF8446F30}</Project>
+      <Name>NavMeshPlusEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{229316C5-5701-1252-82D4-82781BD4E6C9}</Project>
       <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshPlus.csproj">
+      <Project>{FED79A57-D9C3-7910-1362-428152D29BC4}</Project>
+      <Name>NavMeshPlus</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{6025102C-2EC0-2467-6DFE-5D2164198EE0}</Project>

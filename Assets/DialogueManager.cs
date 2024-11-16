@@ -104,6 +104,7 @@ public class DialogueManager : MonoBehaviour
         text2.enabled = true;
 
         //Freeze enemies
+
         manageDialogue();
     }
 }

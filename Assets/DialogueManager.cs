@@ -77,6 +77,11 @@ public class DialogueManager : MonoBehaviour
             dialoguePos2++;
         }
     }
-
-
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        isDialogueActive = true;
+        Debug.Log("here!");
+        image1.gameObject.Transform = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, 0);
+        image2.gameObject.Transform = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, 0);
+    }
 }

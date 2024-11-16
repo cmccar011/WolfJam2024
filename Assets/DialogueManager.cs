@@ -57,7 +57,18 @@ public class DialogueManager : MonoBehaviour
 
     public void manageDialogue()
     {
-        if (dialoguePos1 == dialoguePos2)
+        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, 0);
+        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, 0);
+
+        if (dialoguePos2 == dialogue2.Length && dialoguePos1 == dialogue1.Length)
+        {
+            image1.enabled = false;
+            image2.enabled = false;
+            text1.enabled = false;
+            text2.enabled = false;
+            Destroy(gameObject);
+        }
+        else if (dialoguePos1 == dialoguePos2)
         {
             image1.enabled = true;
             text1.enabled = true;
@@ -75,13 +86,24 @@ public class DialogueManager : MonoBehaviour
             text1.enabled = false;
             text2.text = dialogue2[dialoguePos2];
             dialoguePos2++;
+
         }
+
+        //Now let's finish the dialogue
+
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         isDialogueActive = true;
         Debug.Log("here!");
-        image1.gameObject.Transform = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, 0);
-        image2.gameObject.Transform = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, 0);
+        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, 0);
+        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, 0);
+        image1.enabled = true;
+        image2.enabled = true;
+        text1.enabled = true;
+        text2.enabled = true;
+
+        //Freeze enemies
+        manageDialogue();
     }
 }

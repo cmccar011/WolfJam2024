@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cobble-curb_0: -6764529543914753041
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

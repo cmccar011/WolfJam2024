@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orph-placeholder_0: -2829997909768504698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

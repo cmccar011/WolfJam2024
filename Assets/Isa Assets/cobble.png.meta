@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cobble_0: -3281551213122102089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

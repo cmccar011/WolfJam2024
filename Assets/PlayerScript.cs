@@ -13,6 +13,15 @@ public class PlayerScript : MonoBehaviour
 
     public Vector2 moveDirection;
 
+    public Camera sceneCamera;
+
+    Quaternion target = Quaternion.Euler(0, 0, 0);
+
+    public float aimAngle;
+
+    public GameObject rotateTracker;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +31,12 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        mousePosition = sceneCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 aimDirection = mousePosition - playerBody.position; 
+        aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg + 270f;
+        target = Quaternion.Euler(0, 0, aimAngle);
+        rotateTracker.transform.rotation = target;  
+
         Move();
     }
 

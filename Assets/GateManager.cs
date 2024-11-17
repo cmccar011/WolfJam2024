@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GateManager : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class GateManager : MonoBehaviour
         {
             //Move to the final scene
             Debug.Log("End");
-
+            SceneManager.LoadScene(2);
         }
     }
 }

@@ -427,6 +427,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1737712599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3970383602209899297, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
+  m_PrefabInstance: {fileID: 79496158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3401605205907743529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -483,6 +488,38 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 776941672}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: person1
+      value: 
+      objectReference: {fileID: 1737712599}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: person2
+      value: 
+      objectReference: {fileID: 22386511}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: dialogue1.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: dialogue2.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: 'dialogue1.Array.data[0]'
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: 'dialogue1.Array.data[1]'
+      value: b
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: 'dialogue2.Array.data[0]'
+      value: c
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274880632987180946, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: 'dialogue2.Array.data[1]'
+      value: d
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,5 +532,5 @@ SceneRoots:
   - {fileID: 872506460}
   - {fileID: 3401605205907743529}
   - {fileID: 765040945}
-  - {fileID: 79496158}
   - {fileID: 22386513}
+  - {fileID: 79496158}

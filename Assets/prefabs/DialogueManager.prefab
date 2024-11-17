@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4740512376189457560}
-  - component: {fileID: 6922789381101044708}
   - component: {fileID: 8641779702042994667}
+  - component: {fileID: 8274880632987180946}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -34,27 +34,6 @@ Transform:
   - {fileID: 4469393407386274507}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6922789381101044708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132203932877998476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 632b745445b3ee3458487a69eb9b4f31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  person1: {fileID: 0}
-  person2: {fileID: 0}
-  dialogue1: []
-  dialogue2: []
-  triggerDialogue: {fileID: 0}
-  text1: {fileID: 1946993925948619220}
-  image1: {fileID: 3379196534834893932}
-  text2: {fileID: 7360681316566826001}
-  image2: {fileID: 6648714888723400012}
 --- !u!61 &8641779702042994667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101,6 +80,27 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.5, y: 3.29}
   m_EdgeRadius: 0
+--- !u!114 &8274880632987180946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132203932877998476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04922dda2acf1c4e99af3aeb830b88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  person1: {fileID: 0}
+  person2: {fileID: 0}
+  dialogue1: []
+  dialogue2: []
+  triggerDialogue: {fileID: 0}
+  text1: {fileID: 1946993925948619220}
+  image1: {fileID: 3379196534834893932}
+  text2: {fileID: 7360681316566826001}
+  image2: {fileID: 6648714888723400012}
 --- !u!1 &2454767384508277419
 GameObject:
   m_ObjectHideFlags: 0

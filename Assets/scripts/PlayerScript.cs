@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float moveSpeed = 1000f;
+    public float moveSpeed = 1500f;
 
     public Rigidbody2D playerBody;
 
@@ -20,6 +20,8 @@ public class PlayerScript : MonoBehaviour
     public float aimAngle;
 
     public GameObject rotateTracker;
+
+    public knifeScript scriptKnife;
 
 
     // Start is called before the first frame update
@@ -52,6 +54,11 @@ public class PlayerScript : MonoBehaviour
         public void GetMove(InputAction.CallbackContext context)
     {
         moveDirection = new Vector2(context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y); 
+    }
+
+        public void Fire(InputAction.CallbackContext context)
+    {
+        scriptKnife.KnifeThrow(); 
     }
 
 }

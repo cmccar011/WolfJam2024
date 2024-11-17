@@ -173,12 +173,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2829997909768504698, guid: a3fdbce6ed907cf4487e23c46ed9ee67, type: 3}
+  m_Sprite: {fileID: -2829997909768504698, guid: cbeae32c0eee351448290a25f690db92, type: 3}
   m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.65, y: 4.71}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -267,6 +267,7 @@ MonoBehaviour:
   sceneCamera: {fileID: 9110910064579666241}
   aimAngle: 0
   rotateTracker: {fileID: 8777526260410769995}
+  scriptKnife: {fileID: 7801714574122566169}
 --- !u!114 &6858405238124725686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +314,19 @@ MonoBehaviour:
     m_ActionId: dac65680-1e0d-46b2-85b1-3cfed911b759
     m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3623267274786670872}
+        m_TargetAssemblyTypeName: PlayerScript, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b1751783-c37a-4f6c-9749-369c68627c7f
     m_ActionName: 'Player/Fire[/Mouse/leftButton]'
   - m_PersistentCalls:
@@ -462,9 +475,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knife: {fileID: 2621833105671877345}
-  player: {fileID: 3970383602209899297}
+  spawnPoint: {fileID: 8466666331224858869}
   playerPosition: {fileID: 1268409659955716682}
   rotationTracker: {fileID: 6230423993096806673}
+  throwForce: 243.6
   timeToDestroy: 0.28
 --- !u!1 &8777526260410769995
 GameObject:
@@ -506,6 +520,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7039622566355924451}
     m_Modifications:
+    - target: {fileID: 5648540652165252154, guid: b2c24e0e73f2b834d982808184651adb, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6076142752501302007, guid: b2c24e0e73f2b834d982808184651adb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

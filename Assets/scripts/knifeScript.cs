@@ -5,22 +5,20 @@ using UnityEngine;
 public class knifeScript : MonoBehaviour
 {
     public GameObject knife;
-    public GameObject player;
+
+    public GameObject spawnPoint;   
     public Transform playerPosition;     
 
     public Transform rotationTracker;
 
+    public float throwForce = 200f;
+
     public float timeToDestroy = .28f;  
 
-    void knifeThrow()
+    public void KnifeThrow()
     {
-        Quaternion throwAngle = rotationTracker.rotation;
-        Vector3 eulerSlashAngle = throwAngle.eulerAngles;
-        Vector3 spawnPoint = new Vector3((playerPosition.position.x + 10), playerPosition.position.y, (playerPosition.position.z));
-        eulerSlashAngle.z -= 90;
-        throwAngle = Quaternion.Euler(eulerSlashAngle);
-
-
+        GameObject thrownKnife = Instantiate(knife, spawnPoint.transform.position, rotationTracker.rotation);
+        thrownKnife.GetComponent<Rigidbody2D>().AddForce(spawnPoint.transform.up * throwForce, ForceMode2D.Force); 
     }
 
     // Start is called before the first frame update

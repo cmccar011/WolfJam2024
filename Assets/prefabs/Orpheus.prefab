@@ -227,7 +227,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -585,6 +585,10 @@ PrefabInstance:
     - target: {fileID: 6871488398561986246, guid: b2c24e0e73f2b834d982808184651adb, type: 3}
       propertyPath: m_Name
       value: Blade
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871488398561986246, guid: b2c24e0e73f2b834d982808184651adb, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6871488398561986246, guid: b2c24e0e73f2b834d982808184651adb, type: 3}
       propertyPath: m_TagString

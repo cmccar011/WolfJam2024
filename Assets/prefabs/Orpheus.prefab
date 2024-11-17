@@ -270,6 +270,7 @@ MonoBehaviour:
   aimAngle: 0
   rotateTracker: {fileID: 8777526260410769995}
   scriptKnife: {fileID: 7801714574122566169}
+  ruinStoneScript: {fileID: 0}
   canThrow: 0
   throwDelay: 0.5
 --- !u!114 &6858405238124725686
@@ -587,6 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knife: {fileID: 6871488398561986246, guid: b2c24e0e73f2b834d982808184651adb, type: 3}
   spawnPoint: {fileID: 8466666331224858869}
+  player: {fileID: 3970383602209899297}
   playerPosition: {fileID: 1268409659955716682}
   rotationTracker: {fileID: 6230423993096806673}
   throwForce: 243.6

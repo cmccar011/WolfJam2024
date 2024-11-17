@@ -68,14 +68,15 @@ public class PlayerScript : MonoBehaviour
 
         public void Fire(InputAction.CallbackContext context)
     {
-        if (canThrow && !ruinStoneScript.resonance)
+        if (canThrow && ruinStoneScript.resonance)
         {
             scriptKnife.KnifeThrow(); 
             StartCoroutine(DelayThrow(throwDelay));
         }
-        else
+        else if (canThrow && !ruinStoneScript.resonance)
         {
-
+            scriptKnife.warpKnifeThrow();
+            StartCoroutine(DelayThrow(throwDelay));
         }
     }
 

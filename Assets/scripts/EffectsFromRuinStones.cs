@@ -6,7 +6,7 @@ using UnityEngine;
 public class EffectsFromRuinStones : MonoBehaviour
 {
     public bool resonance = true;
-    public float mana = 100;
+    public float mana = 0;
     public float ManaDrainRate = 0.05f;
     public Transform target; // The object the player approaches.
     public GameObject aura; // The GameObject representing the aura (e.g., a translucent circle).

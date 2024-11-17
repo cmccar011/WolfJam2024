@@ -7,6 +7,8 @@ public class knifeScript : MonoBehaviour
     public GameObject knife;
 
     public GameObject spawnPoint;   
+
+    public GameObject player;
     public Transform playerPosition;     
 
     public Transform rotationTracker;
@@ -22,8 +24,22 @@ public class knifeScript : MonoBehaviour
         DeleteThrown(thrownKnife);
     }
 
+    public void warpKnifeThrow()
+    {
+        GameObject thrownKnife = Instantiate(knife, spawnPoint.transform.position, rotationTracker.rotation);
+        thrownKnife.GetComponent<Rigidbody2D>().AddForce(spawnPoint.transform.up * throwForce, ForceMode2D.Force);
+        WarpThenDelete(thrownKnife);
+    }
+
     public void DeleteThrown(GameObject thrown)
     {
+        Destroy(thrown.gameObject, .50f);
+    }
+
+    public void WarpThenDelete(GameObject thrown)
+    {
+        Delay(.48f);
+        player.transform.position = thrown.transform.position;
         Destroy(thrown.gameObject, .50f);
     }
 
@@ -46,4 +62,10 @@ public class knifeScript : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+    IEnumerator Delay(float x)
+    {   
+        yield return new WaitForSeconds(x); 
+    }
+    
 }

@@ -23,11 +23,15 @@ public class PlayerScript : MonoBehaviour
 
     public knifeScript scriptKnife;
 
+    public bool canThrow;
+
+    public float throwDelay = 0.5f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        canThrow = true;
     }
 
     // Update is called once per frame
@@ -58,7 +62,19 @@ public class PlayerScript : MonoBehaviour
 
         public void Fire(InputAction.CallbackContext context)
     {
-        scriptKnife.KnifeThrow(); 
+        if (canThrow)
+        {
+            scriptKnife.KnifeThrow(); 
+            StartCoroutine(DelayThrow(throwDelay));
+        }
+    }
+
+        IEnumerator DelayThrow(float x)
+    {   
+        canThrow = false;
+        yield return new WaitForSeconds(x);
+        canThrow = true; 
+        Debug.Log("Running...");
     }
 
 }

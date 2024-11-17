@@ -19,6 +19,12 @@ public class knifeScript : MonoBehaviour
     {
         GameObject thrownKnife = Instantiate(knife, spawnPoint.transform.position, rotationTracker.rotation);
         thrownKnife.GetComponent<Rigidbody2D>().AddForce(spawnPoint.transform.up * throwForce, ForceMode2D.Force); 
+        DeleteThrown(thrownKnife);
+    }
+
+    public void DeleteThrown(GameObject thrown)
+    {
+        Destroy(thrown.gameObject, .50f);
     }
 
     // Start is called before the first frame update

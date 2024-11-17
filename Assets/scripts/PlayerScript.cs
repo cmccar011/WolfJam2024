@@ -22,7 +22,11 @@ public class PlayerScript : MonoBehaviour
 
     public GameObject rotateTracker;
 
+    //bool warpRes;
+
     public knifeScript scriptKnife;
+
+    public EffectsFromRuinStones ruinStoneScript;
 
     public bool canThrow;
 
@@ -33,6 +37,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         canThrow = true;
+        //warpRes = true;
     }
 
     // Update is called once per frame
@@ -63,10 +68,14 @@ public class PlayerScript : MonoBehaviour
 
         public void Fire(InputAction.CallbackContext context)
     {
-        if (canThrow)
+        if (canThrow && !ruinStoneScript.resonance)
         {
             scriptKnife.KnifeThrow(); 
             StartCoroutine(DelayThrow(throwDelay));
+        }
+        else
+        {
+
         }
     }
 

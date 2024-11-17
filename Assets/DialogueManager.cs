@@ -57,8 +57,8 @@ public class DialogueManager : MonoBehaviour
 
     public void manageDialogue()
     {
-        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, 0);
-        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, 0);
+        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 3, -2);
+        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 3, -2);
 
         if (dialoguePos2 == dialogue2.Length && dialoguePos1 == dialogue1.Length)
         {
@@ -96,8 +96,8 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = true;
         Debug.Log("here!");
-        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, 0);
-        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, 0);
+        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, -2);
+        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, -2);
         image1.enabled = true;
         image2.enabled = true;
         text1.enabled = true;

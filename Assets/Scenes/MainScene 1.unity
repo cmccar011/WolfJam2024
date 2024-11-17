@@ -36909,6 +36909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager1
       objectReference: {fileID: 0}
+    - target: {fileID: 4469393407386274507, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.93
+      objectReference: {fileID: 0}
     - target: {fileID: 4740512376189457560, guid: c581c59b8d7e32a4d92b2ac4f556a3c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14511669
@@ -43444,7 +43448,7 @@ Tilemap:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 946871945}
   - {fileID: 1306537493}
   - {fileID: 425931829}
   - {fileID: 711345882}
+  - {fileID: 946871945}

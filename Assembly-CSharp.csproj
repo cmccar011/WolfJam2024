@@ -74,6 +74,7 @@
     <Compile Include="Assets\RangedEnemy.cs" />
     <Compile Include="Assets\2D_Handpainted_Magical_Rocks_and_Stones\Scripts\AddColorEffect.cs" />
     <Compile Include="Assets\DialogueManager.cs" />
+    <Compile Include="Assets\scripts\knifeColScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2D_Handpainted_Magical_Rocks_and_Stones\Shaders\AdditiveParticles.shader" />

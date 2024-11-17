@@ -36,6 +36,7 @@ public class GateManager : MonoBehaviour
         {
             //Move to the final scene
             Debug.Log("End");
+
         }
     }
 }

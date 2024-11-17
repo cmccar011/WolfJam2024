@@ -13,7 +13,7 @@ public class knifeScript : MonoBehaviour
 
     public Transform rotationTracker;
 
-    public float throwForce = 200f;
+    public float throwForce = 1000f;
 
     public float timeToDestroy = .28f;  
 

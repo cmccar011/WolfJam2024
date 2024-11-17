@@ -66,6 +66,11 @@ public class DialogueManager : MonoBehaviour
             image2.enabled = false;
             text1.enabled = false;
             text2.enabled = false;
+            if (person1.GetComponent<enemy>() != null)
+            {
+                person1.GetComponent<enemy>().talking = false;
+                person2.GetComponent<enemy>().talking = false;
+            }
             Destroy(gameObject);
         }
         else if (dialoguePos1 == dialoguePos2)
@@ -102,6 +107,14 @@ public class DialogueManager : MonoBehaviour
         image2.enabled = true;
         text1.enabled = true;
         text2.enabled = true;
+
+        if (person1.GetComponent<enemy>() != null)
+        {
+            person1.GetComponent<enemy>().talking = true;
+            person2.GetComponent<enemy>().talking = true;
+        }
+
+
 
         //Freeze enemies
 

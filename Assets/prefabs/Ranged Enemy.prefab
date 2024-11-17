@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 1252304661142828262}
   - component: {fileID: 5085294968150640673}
   - component: {fileID: 245496443990091256}
+  - component: {fileID: 832295564325847873}
+  - component: {fileID: 1930690780859414141}
   m_Layer: 0
   m_Name: Ranged Enemy
   m_TagString: Enemy
@@ -146,8 +148,8 @@ Transform:
   m_GameObject: {fileID: 8153878004323398345}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.981, y: -1.62, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -10.0085, y: -1.7711, z: 0}
+  m_LocalScale: {x: 0.71030927, y: 0.7800432, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 78225292261852610}
@@ -197,7 +199,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -47658931, guid: d20c1d7674ff45244a6970f10049ec6a, type: 3}
   m_Color: {r: 0.19708972, g: 0.3441119, b: 0.9716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -223,11 +225,14 @@ MonoBehaviour:
   target: {fileID: 0}
   _speed: 3
   _rotationSpeed: 5
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3358858589751937086, guid: d4ff9abe667568a488aad8f407b800e7, type: 3}
   _distanceToShoot: 8
   _distanceToStop: 3
   _fireRate: 0.5
-  _firingPoint: {fileID: 0}
+  _firingPoint: {fileID: 4490423337586588334}
+  locations: []
+  pastLocation: 0
+  goal: 0
 --- !u!60 &5085294968150640673
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -265,8 +270,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 5.12}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -305,3 +310,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &832295564325847873
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8153878004323398345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0fcf2286ec11c7141aa9612e863f8cab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &1930690780859414141
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8153878004323398345}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.2799999
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 5.12
+  m_BaseOffset: 2.56
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

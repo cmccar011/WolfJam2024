@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem; 
 
@@ -77,4 +78,12 @@ public class PlayerScript : MonoBehaviour
         Debug.Log("Running...");
     }
 
+       /* private void OnCollisionEnter2D(Collision other)
+        {
+            if (other.gameObject.CompareTag("EnemyBullet"))
+            {
+                Destroy(gameObject);
+            }
+        }
+     */
 }

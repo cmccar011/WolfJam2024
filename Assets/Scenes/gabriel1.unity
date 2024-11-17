@@ -517,12 +517,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1969963276917215739, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623267274786670872, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
+      propertyPath: throwDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3970383602209899297, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
       propertyPath: m_Name
       value: Orpheus
       objectReference: {fileID: 0}
     - target: {fileID: 8187780053045726029, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067261237559900600, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
+      propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -66,9 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\knifeScript.cs" />
+    <Compile Include="Assets\LeverManager.cs" />
     <Compile Include="Assets\RuinStoneEffects.cs" />
     <Compile Include="Assets\scripts\PlayerScript.cs" />
     <Compile Include="Assets\enemy.cs" />
+    <Compile Include="Assets\GateManager.cs" />
     <Compile Include="Assets\2D_Handpainted_Magical_Rocks_and_Stones\Scripts\AddColorEffect.cs" />
     <Compile Include="Assets\DialogueManager.cs" />
   </ItemGroup>

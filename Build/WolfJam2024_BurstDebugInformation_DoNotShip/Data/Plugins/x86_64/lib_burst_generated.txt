@@ -1,4 +1,4 @@
-Library: C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+Library: C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-15
 --target=AVX2
@@ -10,6 +10,7 @@ Library: C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\li
 --assembly-defines=Assembly-CSharp;
 --assembly-defines=Mono.Security;
 --assembly-defines=mscorlib;
+--assembly-defines=NavMeshPlus;
 --assembly-defines=netstandard;
 --assembly-defines=System.ComponentModel.Composition;
 --assembly-defines=System.Configuration;
@@ -53,10 +54,10 @@ Library: C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\li
 --assembly-defines=UnityEngine;
 --linker-options=PdbAltPath="WolfJam2024_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Documents\Github\WolfJam2024\Temp\Burst
+--temp-folder=C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/2023.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=C:\Documents\Github\WolfJam2024\Library\Burst
---output=C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Library\Burst
+--output=C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -106,6 +107,7 @@ Library: C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\li
 --assembly-defines=Assembly-CSharp;
 --assembly-defines=Mono.Security;
 --assembly-defines=mscorlib;
+--assembly-defines=NavMeshPlus;
 --assembly-defines=netstandard;
 --assembly-defines=System.ComponentModel.Composition;
 --assembly-defines=System.Configuration;
@@ -149,10 +151,10 @@ Library: C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\li
 --assembly-defines=UnityEngine;
 --linker-options=PdbAltPath="WolfJam2024_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Documents\Github\WolfJam2024\Temp\Burst
+--temp-folder=C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/2023.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=C:\Documents\Github\WolfJam2024\Library\Burst
---output=C:\Documents\Github\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Library\Burst
+--output=C:\Users\Shane\Dropbox\My PC (LAPTOP-S6QQDB2A)\Documents\GitHub\Resonance\WolfJam2024\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10

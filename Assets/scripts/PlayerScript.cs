@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float moveSpeed = 1500f;
+    public float moveSpeed = 1000f;
 
     public Rigidbody2D playerBody;
 
@@ -30,8 +30,9 @@ public class PlayerScript : MonoBehaviour
 
     public bool canThrow;
 
-    public float throwDelay = 0.5f;
+    public float throwDelay = 1f;
 
+    GameObject thrown;
 
     // Start is called before the first frame update
     void Start()
@@ -68,15 +69,19 @@ public class PlayerScript : MonoBehaviour
 
         public void Fire(InputAction.CallbackContext context)
     {
+        
         if (canThrow && ruinStoneScript.resonance)
         {
-            scriptKnife.KnifeThrow(); 
+            thrown = scriptKnife.KnifeThrow(); 
             StartCoroutine(DelayThrow(throwDelay));
         }
-        else if (canThrow && !ruinStoneScript.resonance)
+        else if (!canThrow)
         {
-            scriptKnife.warpKnifeThrow();
-            StartCoroutine(DelayThrow(throwDelay));
+            if (thrown != null)
+            {
+                scriptKnife.teleport(thrown);
+                //StartCoroutine(DelayThrow(throwDelay));
+            }
         }
     }
 

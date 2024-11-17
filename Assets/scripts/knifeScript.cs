@@ -13,15 +13,17 @@ public class knifeScript : MonoBehaviour
 
     public Transform rotationTracker;
 
-    public float throwForce = 1000f;
+    public float throwForce = 500f;
 
-    public float timeToDestroy = .28f;  
+    public float timeToDestroy = .5f;  
 
-    public void KnifeThrow()
+    public GameObject KnifeThrow()
     {
+
         GameObject thrownKnife = Instantiate(knife, spawnPoint.transform.position, rotationTracker.rotation);
         thrownKnife.GetComponent<Rigidbody2D>().AddForce(spawnPoint.transform.up * throwForce, ForceMode2D.Force); 
-        DeleteThrown(thrownKnife);
+        //DeleteThrown(thrownKnife);
+        return thrownKnife;
     }
 
     public void warpKnifeThrow()
@@ -38,9 +40,16 @@ public class knifeScript : MonoBehaviour
 
     public void WarpThenDelete(GameObject thrown)
     {
-        Delay(.48f);
+        Delay(.5f);
         player.transform.position = thrown.transform.position;
         Destroy(thrown.gameObject, .50f);
+    }
+
+    public void teleport(GameObject thrown)
+    {
+        //Delay(.25f);
+        player.transform.position = thrown.transform.position;
+        Destroy(thrown.gameObject, .3f);
     }
 
     // Start is called before the first frame update

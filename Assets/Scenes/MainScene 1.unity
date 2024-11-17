@@ -37356,6 +37356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orpheus
       objectReference: {fileID: 0}
+    - target: {fileID: 3970383602209899297, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 7801714574122566169, guid: b5af1d95875f593458b2f3d22ef8f312, type: 3}
       propertyPath: throwForce
       value: 1000

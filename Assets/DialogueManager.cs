@@ -99,14 +99,17 @@ public class DialogueManager : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        isDialogueActive = true;
-        Debug.Log("here!");
-        image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, -2);
-        image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, -2);
-        image1.enabled = true;
-        image2.enabled = true;
-        text1.enabled = true;
-        text2.enabled = true;
+        if (other.gameObject.CompareTag("Respawn"))
+        {
+            isDialogueActive = true;
+            Debug.Log("here!");
+            image1.gameObject.transform.position = new Vector3(person1.transform.position.x, person1.transform.position.y + 1, -2);
+            image2.gameObject.transform.position = new Vector3(person2.transform.position.x, person2.transform.position.y + 1, -2);
+            image1.enabled = true;
+            image2.enabled = true;
+            text1.enabled = true;
+            text2.enabled = true;
+        }
 
         if (person1.GetComponent<enemy>() != null)
         {

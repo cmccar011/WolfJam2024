@@ -26,6 +26,7 @@ public class GateManager : MonoBehaviour
         if (lever1.GetComponent<LeverManager>().beenHit && lever2.GetComponent<LeverManager>().beenHit)
         {
             //raise the gate
+            Debug.Log("Raise!");
             nowRaised = true;
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         }

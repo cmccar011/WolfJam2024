@@ -26,6 +26,8 @@ public class PlayerScript : MonoBehaviour
 
     public knifeScript scriptKnife;
 
+    public EffectsFromRuinStones ruinStoneScript;
+
     public bool canThrow;
 
     public float throwDelay = 0.5f;
@@ -66,7 +68,7 @@ public class PlayerScript : MonoBehaviour
 
         public void Fire(InputAction.CallbackContext context)
     {
-        if (canThrow /*&& !warpRes*/)
+        if (canThrow && !ruinStoneScript.resonance)
         {
             scriptKnife.KnifeThrow(); 
             StartCoroutine(DelayThrow(throwDelay));

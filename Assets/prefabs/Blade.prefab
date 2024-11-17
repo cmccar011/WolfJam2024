@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4860946882768819377}
   - component: {fileID: 5648540652165252154}
   - component: {fileID: 7057488544380552438}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Blade
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
